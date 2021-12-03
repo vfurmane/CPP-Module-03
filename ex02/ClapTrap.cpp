@@ -6,7 +6,7 @@
 /*   By: vfurmane <vfurmane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 11:26:35 by vfurmane          #+#    #+#             */
-/*   Updated: 2021/12/03 16:31:39 by vfurmane         ###   ########.fr       */
+/*   Updated: 2021/12/03 16:34:36 by vfurmane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,11 +72,6 @@ void	ClapTrap::takeDamage(unsigned int amount)
 
 void	ClapTrap::beRepaired(unsigned int amount)
 {
-	if (this->_hitpoints < 10)
-	{
-		std::cout << "ClapTrap " << this->_name << " recovers " << amount << " points of damage!" << std::endl;
-		this->_hitpoints += amount;
-	}
-	else
-		std::cout << "ClapTrap " << this->_name << " cannot recover more hitpoints..." << std::endl;
+	std::cout << "ClapTrap " << this->_name << " recovers " << amount << " points of damage!" << std::endl;
+	this->_hitpoints += amount;
 }
