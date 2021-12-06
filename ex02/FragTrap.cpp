@@ -6,13 +6,13 @@
 /*   By: vfurmane <vfurmane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 16:02:17 by vfurmane          #+#    #+#             */
-/*   Updated: 2021/12/03 16:28:39 by vfurmane         ###   ########.fr       */
+/*   Updated: 2021/12/06 10:11:40 by vfurmane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "FragTrap.hpp"
 
-FragTrap::FragTrap(void) : ClapTrap("SC4V-TP")
+FragTrap::FragTrap(void) : ClapTrap("FR4G-TP")
 {
 	std::cout << "*inaudible noises* This is FragTrap " << this->_name << std::endl;
 	this->_hitpoints = 100;
