@@ -6,7 +6,7 @@
 #    By: vfurmane <vfurmane@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/02 12:04:50 by vfurmane          #+#    #+#              #
-#    Updated: 2021/12/06 10:46:28 by vfurmane         ###   ########.fr        #
+#    Updated: 2021/12/08 12:45:57 by vfurmane         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME		= a.out
 SRCS		= main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp DiamondTrap.cpp
 OBJS		= $(SRCS:.cpp=.o)
 CC			= c++
-CFLAGS		= -Wall -Wextra -Werror -Wno-shadow -std=c++98
+CFLAGS		= -Wall -Wextra -Werror -std=c++98
 RM			= rm -f
 
 %.o:		%.cpp
