@@ -6,7 +6,7 @@
 /*   By: vfurmane <vfurmane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 16:02:17 by vfurmane          #+#    #+#             */
-/*   Updated: 2021/12/06 10:11:40 by vfurmane         ###   ########.fr       */
+/*   Updated: 2021/12/23 12:26:30 by vfurmane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,18 @@ FragTrap	&FragTrap::operator=(const FragTrap &rhs)
 	return *this;
 }
 
+void	FragTrap::attack(const std::string &target)
+{
+	if (this->_energy_points > 0)
+	{
+		std::cout << "FragTrap " << this->_name << " scratches " << target << ", causing " << this->_attack_damage << " points of damage!" << std::endl;
+		this->_energy_points--;
+	}
+	else
+		std::cout << "FragTrap " << this->_name << " does not have enough energy points to attack..." << std::endl;
+}
+
 void	FragTrap::highFiveGuys(void)
 {
-	std::cout << "FragTrap " << this->_name << " request a high five !" << std::endl;
+	std::cout << "FragTrap " << this->_name << " requests a high five !" << std::endl;
 }
