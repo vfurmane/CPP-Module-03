@@ -6,7 +6,7 @@
 /*   By: vfurmane <vfurmane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 12:43:58 by vfurmane          #+#    #+#             */
-/*   Updated: 2021/12/06 10:47:52 by vfurmane         ###   ########.fr       */
+/*   Updated: 2021/12/23 12:37:35 by vfurmane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ class ScavTrap : virtual public ClapTrap
 
 		ScavTrap	&operator=(const ScavTrap &rhs);
 
+		void		attack(const std::string &target);
 		void		guardGate(void);
 };
 

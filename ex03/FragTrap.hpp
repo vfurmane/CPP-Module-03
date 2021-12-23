@@ -6,7 +6,7 @@
 /*   By: vfurmane <vfurmane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 16:02:28 by vfurmane          #+#    #+#             */
-/*   Updated: 2021/12/06 10:15:26 by vfurmane         ###   ########.fr       */
+/*   Updated: 2021/12/23 12:38:07 by vfurmane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ class FragTrap : virtual public ClapTrap
 
 		FragTrap	&operator=(const FragTrap &rhs);
 
+		void		attack(const std::string &target);
 		void		highFiveGuys(void);
 };
 

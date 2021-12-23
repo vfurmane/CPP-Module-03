@@ -6,7 +6,7 @@
 /*   By: vfurmane <vfurmane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/06 10:06:50 by vfurmane          #+#    #+#             */
-/*   Updated: 2021/12/06 11:29:53 by vfurmane         ###   ########.fr       */
+/*   Updated: 2021/12/23 12:38:55 by vfurmane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,17 +29,17 @@ DiamondTrap::DiamondTrap(const DiamondTrap &obj) : ClapTrap(obj), FragTrap(obj),
 {
 	*this = obj;
 	std::cout << "*gibberish noises* DiamondTrap " << this->_name << std::endl;
-	this->_hitpoints = 100;
-	this->_energy_points = 100;
-	this->_attack_damage = 30;
+	this->_hitpoints = FragTrap::_hitpoints;
+	this->_energy_points = ScavTrap::_energy_points;
+	this->_attack_damage = FragTrap::_attack_damage;
 }
 
 DiamondTrap::DiamondTrap(const std::string &name) : ClapTrap(name + "_clap_name"), FragTrap(name), ScavTrap(name), _name(name)
 {
 	std::cout << "*gibberish noises* DiamondTrap " << this->_name << std::endl;
-	this->_hitpoints = 100;
-	this->_energy_points = 100;
-	this->_attack_damage = 30;
+	this->_hitpoints = FragTrap::_hitpoints;
+	this->_energy_points = ScavTrap::_energy_points;
+	this->_attack_damage = FragTrap::_attack_damage;
 }
 
 DiamondTrap	&DiamondTrap::operator=(const DiamondTrap &rhs)
