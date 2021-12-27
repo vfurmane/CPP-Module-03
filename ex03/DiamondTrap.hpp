@@ -6,12 +6,12 @@
 /*   By: vfurmane <vfurmane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/06 10:06:38 by vfurmane          #+#    #+#             */
-/*   Updated: 2021/12/06 10:56:42 by vfurmane         ###   ########.fr       */
+/*   Updated: 2021/12/27 12:22:27 by vfurmane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef DIAMONDTRAP_HPP
-# define DIAMOND_TRAP_HPP
+# define DIAMONDTRAP_HPP
 
 # include "FragTrap.hpp"
 # include "ScavTrap.hpp"
